@@ -1,5 +1,7 @@
 FROM mono:3.8.0
 
+MAINTAINER Jo Shields <jo.shields@xamarin.com>
+
 RUN mkdir -p /usr/src/app/{source,build}
 WORKDIR /usr/src/app/source
 

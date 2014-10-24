@@ -1,5 +1,7 @@
 FROM debian:wheezy
 
+MAINTAINER Jo Shields <jo.shields@xamarin.com>
+
 #based on dockerfile by Michael Friis <friism@gmail.com>
 
 RUN apt-get update \
