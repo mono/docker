@@ -15,5 +15,5 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.12
 	&& apt-get install -y mono-devel fsharp mono-vbnc nuget \
 	&& rm -rf /var/lib/apt/lists/*
 
-RUN mozroots --machine --import --sync --quiet
+RUN mozroots --import --sync --quiet
 
