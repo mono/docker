@@ -8,6 +8,8 @@
 - [`3.10.0-onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/3.10.0/onbuild/Dockerfile)
 - [`3.8.0` (*Dockerfile*)](https://github.com/mono/docker/blob/master/3.8.0/Dockerfile)
 - [`3.8.0-onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/3.8.0/onbuild/Dockerfile)
+- [`4.0.0` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.0.0/Dockerfile)
+- [`4.0.0-onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/4.0.0/onbuild/Dockerfile)
 
 # What is Mono
 
