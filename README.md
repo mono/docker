@@ -2,6 +2,7 @@
 
 - [`latest` (*Dockerfile*)](https://github.com/mono/docker/blob/master/3.12.0/Dockerfile)
 - [`onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/3.12.0/onbuild/Dockerfile)
+- [`alpha` (*Dockerfile*)](https://github.com/mono/docker/blob/master/alpha/Dockerfile)
 - [`3.12.0` (*Dockerfile*)](https://github.com/mono/docker/blob/master/3.12.0/Dockerfile)
 - [`3.12.0-onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/3.12.0/onbuild/Dockerfile)
 - [`3.10.0` (*Dockerfile*)](https://github.com/mono/docker/blob/master/3.10.0/Dockerfile)
