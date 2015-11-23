@@ -1,4 +1,4 @@
-FROM mono:4.0.0
+FROM mono:4.2.1
 
 MAINTAINER Jo Shields <jo.shields@xamarin.com>
 
