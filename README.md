@@ -3,7 +3,7 @@
 - [`latest` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.2.3.4/Dockerfile)
 - [`onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/4.2.3.4/onbuild/Dockerfile)
 - [`4.2.3.4` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.2.3.4/Dockerfile)
-- [`4.2.3.4-onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/4.2.3.4/onbuild/Dockerfile)- [`4.2.3.4` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.2.3.4/Dockerfile) 
+- [`4.2.3.4-onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/4.2.3.4/onbuild/Dockerfile)
 - [`4.2.2.30` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.2.2.30/Dockerfile)
 - [`4.2.2.30-onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/4.2.2.30/onbuild/Dockerfile)
 - [`4.2.1.102` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.2.1.102/Dockerfile)
@@ -55,7 +55,7 @@ You should see any output from your app now.
 
 # Credits
 
-This Docker image is provided by Xamarin, for users of the Mono Project. 
+This Docker image is provided by Xamarin, for users of the Mono Project.
 
 Thanks to [Michael Friis](http://friism.com/) for his preliminary work.
 
