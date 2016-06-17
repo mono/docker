@@ -4,6 +4,8 @@
 - [`onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/4.4.0.182/onbuild/Dockerfile)
 - [`4.4.0.182` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.4.0.182/Dockerfile)
 - [`4.4.0.182-onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/4.4.0.182/onbuild/Dockerfile)
+- [`4.2.4.4` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.2.4.4/Dockerfile)
+- [`4.2.4.4-onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/4.2.4.4/onbuild/Dockerfile)
 - [`4.2.3.4` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.2.3.4/Dockerfile)
 - [`4.2.3.4-onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/4.2.3.4/onbuild/Dockerfile)
 - [`4.2.2.30` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.2.2.30/Dockerfile)
