@@ -16,5 +16,5 @@ RUN echo "deb http://download.mono-project.com/repo/debian wheezy/snapshots/3.10
 	&& apt-get install -y mono-devel fsharp mono-vbnc nuget \
 	&& rm -rf /var/lib/apt/lists/*
 
-RUN mozroots --machine --import --sync --quiet
+RUN mozroots --machine --import --sync --quiet --url http://hg.mozilla.org/releases/mozilla-release/raw-file/default/security/nss/lib/ckfw/builtins/certdata.txt
 
