@@ -1,7 +1,9 @@
 # Supported tags and `Dockerfile` links
 
-- [`latest` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.4.0.182/Dockerfile)
-- [`onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/4.4.0.182/onbuild/Dockerfile)
+- [`latest` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.4.1.0/Dockerfile)
+- [`onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/4.4.1.0/onbuild/Dockerfile)
+- [`4.4.1.0` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.4.1.0/Dockerfile)
+- [`4.4.1.0-onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/4.4.1.0/onbuild/Dockerfile)
 - [`4.4.0.182` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.4.0.182/Dockerfile)
 - [`4.4.0.182-onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/4.4.0.182/onbuild/Dockerfile)
 - [`4.2.4.4` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.2.4.4/Dockerfile)
