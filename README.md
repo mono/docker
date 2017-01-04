@@ -36,6 +36,8 @@
 - [`3.10.0-onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/3.10.0/onbuild/Dockerfile)
 - [`3.8.0` (*Dockerfile*)](https://github.com/mono/docker/blob/master/3.8.0/Dockerfile)
 - [`3.8.0-onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/3.8.0/onbuild/Dockerfile)
+- [`4.0.0` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.0.0/Dockerfile)
+- [`4.0.0-onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/4.0.0/onbuild/Dockerfile)
 
 *Note:* Previously, we only maintained packages for major versions - 4.0 would be "the latest 4.0" for example, with no older 4.0 available.
 Moving forwards, we now retain packages for every stable release, so "4.2" points to the latest 4.2.x, but older 4.2.x releases will continue to be available for services like Travis and Docker.
