@@ -5,7 +5,6 @@ MAINTAINER Jo Shields <jo.shields@xamarin.com>
 #based on dockerfile by Michael Friis <friism@gmail.com>
 
 ENV MONO_VERSION 4.6.2.16
-ENV DEBIAN_FRONTEND noninteractive
 
 RUN apt-get update \
   && apt-get install -y curl \
