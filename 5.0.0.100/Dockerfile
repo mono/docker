@@ -1,8 +1,9 @@
 FROM debian:jessie
 
-MAINTAINER Jo Shields <jo.shields@xamarin.com>
+# MAINTAINER Jo Shields <jo.shields@xamarin.com>
+# MAINTAINER Alexander Köplinger <alkpli@microsoft.com>
 
-#based on dockerfile by Michael Friis <friism@gmail.com>
+# based on dockerfile by Michael Friis <friism@gmail.com>
 
 ENV MONO_VERSION 5.0.0.100
 

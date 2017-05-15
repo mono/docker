@@ -26,6 +26,7 @@ versions=( "${versions[@]%/}" )
 url='git://github.com/mono/docker'
 
 echo '# maintainer: Jo Shields <jo.shields@xamarin.com> (@directhex)'
+echo '# maintainer: Alexander Köplinger <alkpli@microsoft.com> (@akoeplinger)'
 
 for version in "${versions[@]}"; do
 	commit="$(git log -1 --format='format:%H' -- "$version")"
