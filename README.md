@@ -1,46 +1,23 @@
 # Supported tags and `Dockerfile` links
 
-- [`latest` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.8.0.495/Dockerfile)
-- [`onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/4.8.0.495/onbuild/Dockerfile)
-- [`4.8.0.495` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.8.0.495/Dockerfile)
-- [`4.8.0.495-onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/4.8.0.495/onbuild/Dockerfile)
-- [`4.6.2.16` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.6.2.16/Dockerfile)
-- [`4.6.2.16-onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/4.6.2.16/onbuild/Dockerfile)
-- [`4.6.2.7` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.6.2.7/Dockerfile)
-- [`4.6.2.7-onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/4.6.2.7/onbuild/Dockerfile)
-- [`4.6.1.5` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.6.1.5/Dockerfile)
-- [`4.6.1.5-onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/4.6.1.5/onbuild/Dockerfile)
-- [`4.6.1.3` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.6.1.3/Dockerfile)
-- [`4.6.1.3-onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/4.6.1.3/onbuild/Dockerfile)
-- [`4.6.0.245` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.6.0.245/Dockerfile)
-- [`4.6.0.245-onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/4.6.0.245/onbuild/Dockerfile)
-- [`4.4.2.11` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.4.2.11/Dockerfile)
-- [`4.4.2.11-onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/4.4.2.11/onbuild/Dockerfile)
-- [`4.4.1.0` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.4.1.0/Dockerfile)
-- [`4.4.1.0-onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/4.4.1.0/onbuild/Dockerfile)
-- [`4.4.0.182` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.4.0.182/Dockerfile)
-- [`4.4.0.182-onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/4.4.0.182/onbuild/Dockerfile)
-- [`4.2.4.4` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.2.4.4/Dockerfile)
-- [`4.2.4.4-onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/4.2.4.4/onbuild/Dockerfile)
-- [`4.2.3.4` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.2.3.4/Dockerfile)
-- [`4.2.3.4-onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/4.2.3.4/onbuild/Dockerfile)
-- [`4.2.2.30` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.2.2.30/Dockerfile)
-- [`4.2.2.30-onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/4.2.2.30/onbuild/Dockerfile)
-- [`4.2.1.102` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.2.1.102/Dockerfile)
-- [`4.2.1.102-onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/4.2.1.102/onbuild/Dockerfile)
-- [`4.0.5.1` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.0.5.1/Dockerfile)
-- [`4.0.5.1-onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/4.0.5.1/onbuild/Dockerfile)
+- [`latest` (*Dockerfile*)](https://github.com/mono/docker/blob/master/5.0.0.100/Dockerfile)
+- [`5.0.0.100` (*Dockerfile*)](https://github.com/mono/docker/blob/master/5.0.0.100/Dockerfile)
+- [`5.0.0` (*Dockerfile*)](https://github.com/mono/docker/blob/master/5.0.0.100/Dockerfile)
+- [`5.0` (*Dockerfile*)](https://github.com/mono/docker/blob/master/5.0.0.100/Dockerfile)
+- [`5` (*Dockerfile*)](https://github.com/mono/docker/blob/master/5.0.0.100/Dockerfile)
+- [`4.8.0.524` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.8.0.524/Dockerfile)
+- [`4.8.0` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.8.0.524/Dockerfile)
+- [`4.8` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.8.0.524/Dockerfile)
+- [`4` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.8.0.524/Dockerfile)
 - [`3.12.1` (*Dockerfile*)](https://github.com/mono/docker/blob/master/3.12.1/Dockerfile)
-- [`3.12.1-onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/3.12.1/onbuild/Dockerfile)
-- [`3.12.0` (*Dockerfile*)](https://github.com/mono/docker/blob/master/3.12.1/Dockerfile)
-- [`3.12.0-onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/3.12.1/onbuild/Dockerfile)
-- [`3.10.0` (*Dockerfile*)](https://github.com/mono/docker/blob/master/3.10.0/Dockerfile)
-- [`3.10.0-onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/3.10.0/onbuild/Dockerfile)
-- [`3.8.0` (*Dockerfile*)](https://github.com/mono/docker/blob/master/3.8.0/Dockerfile)
-- [`3.8.0-onbuild` (*onbuild/Dockerfile*)](https://github.com/mono/docker/blob/master/3.8.0/onbuild/Dockerfile)
+- [`3.12` (*Dockerfile*)](https://github.com/mono/docker/blob/master/3.12.1/Dockerfile)
+- [`3` (*Dockerfile*)](https://github.com/mono/docker/blob/master/3.12.1/Dockerfile)
 
-*Note:* Previously, we only maintained packages for major versions - 4.0 would be "the latest 4.0" for example, with no older 4.0 available.
-Moving forwards, we now retain packages for every stable release, so "4.2" points to the latest 4.2.x, but older 4.2.x releases will continue to be available for services like Travis and Docker.
+*Note:* We push every Mono release to Docker Hub. The latest, latest-1 and the last version
+before a major version bump are periodically rebuilt by Docker Hub to pull in updates from
+the base Debian image. All other version tags are still available, but won't get those updates
+so you need to keep your images up to date by running `apt` yourself. We encourage you to move
+to latest Mono releases as soon as they're available.
 
 # What is Mono
 

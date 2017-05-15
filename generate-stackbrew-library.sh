@@ -3,6 +3,7 @@ set -e
 
 # we want the current latest version, one version before that
 # and the last version before a major version bump
+# NOTE: update README.md with new versions too
 aliases=(
 	'5.0.0.100  -> 5.0.0 5.0 5 latest'
 	'4.8.0.524  -> 4.8.0 4.8 4'
