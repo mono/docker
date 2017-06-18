@@ -5,7 +5,8 @@ set -e
 # and the last version before a major version bump
 # NOTE: update README.md with new versions too
 aliases=(
-	'5.0.0.100  -> 5.0.0 5.0 5 latest'
+	'5.0.1.1    -> 5.0.1 5.0 5 latest'
+	'5.0.0.100  -> 5.0.0'
 	'4.8.0.524  -> 4.8.0 4.8 4'
 	'3.12.1     -> 3.12.0 3.12 3'
 )
