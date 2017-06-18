@@ -1,11 +1,11 @@
-FROM debian:jessie
+FROM debian:jessie-slim
 
 # MAINTAINER Jo Shields <jo.shields@xamarin.com>
 # MAINTAINER Alexander Köplinger <alkpli@microsoft.com>
 
 # based on dockerfile by Michael Friis <friism@gmail.com>
 
-ENV MONO_VERSION 5.0.0.100
+ENV MONO_VERSION 5.0.1.1
 
 RUN apt-get update \
   && apt-get install -y curl \
