@@ -5,34 +5,51 @@ set -e
 # and the last version before a major version bump
 # NOTE: update README.md with new versions too
 aliases=(
-	'5.0.1.1    -> 5.0.1 5.0 5 latest'
-	'5.0.0.100  -> 5.0.0'
+	'5.2.0.215  -> 5.2.0 5.2 5 latest'
+	'5.0.1.1    -> 5.0.1 5.0'
 	'4.8.0.524  -> 4.8.0 4.8 4'
 	'3.12.1     -> 3.12.0 3.12 3'
 )
 
 cd "$(dirname "${BASH_SOURCE[0]}")"
 
-versions=( */ )
+versions=( $( ls -d */ | sort -r))
 versions=( "${versions[@]%/}" )
-url='git://github.com/mono/docker'
 
-echo '# maintainer: Jo Shields <jo.shields@xamarin.com> (@directhex)'
-echo '# maintainer: Alexander Köplinger <alkpli@microsoft.com> (@akoeplinger)'
+echo '# this file is generated via https://github.com/mono/docker/blob/master/generate-stackbrew-library.sh'
+echo
+echo 'Maintainers: Jo Shields <jo.shields@xamarin.com> (@directhex),'
+echo '             Alexander Köplinger <alkpli@microsoft.com> (@akoeplinger)'
+echo 'GitRepo: https://github.com/mono/docker.git'
 
 for version in "${versions[@]}"; do
-	commit="$(git log -1 --format='format:%H' -- "$version")"
-	versionAliases=( $version )
 
-	for index in "${aliases[@]}"; do
-		if [[ "${index%% *-> *}" == "$version" ]]; then
-			versionAliases+=(${index##* -> })
-		fi
-	done
+	variants=('')
+	if [ -d $version/slim ]; then
+		variants+=('-slim')
+	fi
 
-	echo
-	for va in "${versionAliases[@]}"; do
-		echo "$va: ${url}@${commit} $version"
+	for variant in "${variants[@]}"; do
+		commit="$(git log -1 --format='format:%H' -- "$version${variant/-//}")"
+		versionAliases=( $version )
+
+		for index in "${aliases[@]}"; do
+			if [[ "${index%% *-> *}" == "$version" ]]; then
+				versionAliases+=(${index##* -> })
+			fi
+		done
+
+		tags=$(printf "%s$variant, " "${versionAliases[@]}")
+		tags="${tags%, }"
+
+		architectures="amd64, i386, arm32v7"
+		if [[ "$version" != "3"* ]]; then architectures+=", arm64v8"; fi
+
+		echo
+		echo "Tags: $tags"
+		echo "Architectures: $architectures"
+		echo "GitCommit: ${commit}"
+		echo "Directory: $version${variant/-//}"
 	done
 
 done
