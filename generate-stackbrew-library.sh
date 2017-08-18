@@ -20,7 +20,7 @@ echo '# this file is generated via https://github.com/mono/docker/blob/master/ge
 echo
 echo 'Maintainers: Jo Shields <jo.shields@xamarin.com> (@directhex),'
 echo '             Alexander Köplinger <alkpli@microsoft.com> (@akoeplinger)'
-echo 'GitRepo: git://github.com/mono/docker'
+echo 'GitRepo: https://github.com/mono/docker.git'
 
 for version in "${versions[@]}"; do
 
