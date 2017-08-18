@@ -13,5 +13,5 @@ RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E03280
 
 RUN echo "deb http://download.mono-project.com/repo/debian jessie/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-official.list \
   && apt-get update \
-  && apt-get install -y binutils mono-runtime libmono-system4.0-cil \
+  && apt-get install -y binutils mono-runtime \
   && rm -rf /var/lib/apt/lists/* /tmp/*
