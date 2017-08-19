@@ -1,12 +1,13 @@
 # Supported tags and `Dockerfile` links
 
-- [`latest` (*Dockerfile*)](https://github.com/mono/docker/blob/master/5.0.1.1/Dockerfile)
+- [`latest` (*Dockerfile*)](https://github.com/mono/docker/blob/master/5.2.0.215/Dockerfile)
+- [`5.2.0.215` (*Dockerfile*)](https://github.com/mono/docker/blob/master/5.2.0.215/Dockerfile)
+- [`5.2.0` (*Dockerfile*)](https://github.com/mono/docker/blob/master/5.2.0.215/Dockerfile)
+- [`5.2` (*Dockerfile*)](https://github.com/mono/docker/blob/master/5.2.0.215/Dockerfile)
 - [`5.0.1.1` (*Dockerfile*)](https://github.com/mono/docker/blob/master/5.0.1.1/Dockerfile)
 - [`5.0.1` (*Dockerfile*)](https://github.com/mono/docker/blob/master/5.0.1.1/Dockerfile)
 - [`5.0` (*Dockerfile*)](https://github.com/mono/docker/blob/master/5.0.1.1/Dockerfile)
-- [`5` (*Dockerfile*)](https://github.com/mono/docker/blob/master/5.0.1.1/Dockerfile)
-- [`5.0.0.100` (*Dockerfile*)](https://github.com/mono/docker/blob/master/5.0.0.100/Dockerfile)
-- [`5.0.0` (*Dockerfile*)](https://github.com/mono/docker/blob/master/5.0.0.100/Dockerfile)
+- [`5` (*Dockerfile*)](https://github.com/mono/docker/blob/master/5.2.0.215/Dockerfile)
 - [`4.8.0.524` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.8.0.524/Dockerfile)
 - [`4.8.0` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.8.0.524/Dockerfile)
 - [`4.8` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.8.0.524/Dockerfile)
