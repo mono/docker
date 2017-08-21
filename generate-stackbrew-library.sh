@@ -58,7 +58,7 @@ for version in "${versions[@]}"; do
 		tags="${tags%, }"
 
 		architectures="amd64, i386, arm32v7"
-		if [[ "$version" != "3"* ]]; then architectures+=", arm64v8"; fi
+		if ! grep -q 'wheezy' "$version/Dockerfile"; then architectures+=", arm64v8"; fi
 
 		echo
 		echo "Tags: $tags"
