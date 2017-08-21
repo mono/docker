@@ -1,14 +1,21 @@
 #!/bin/bash
 set -e
 
-# we want the current latest version, one version before that
+# we want the current latest version, one minor version before that
 # and the last version before a major version bump
-# NOTE: update README.md with new versions too
 aliases=(
-	'5.2.0.215  -> 5.2.0 5.2 5 latest'
-	'5.0.1.1    -> 5.0.1 5.0'
-	'4.8.0.524  -> 4.8.0 4.8 4'
-	'3.12.1     -> 3.12.0 3.12 3'
+	'5.2.0      -> 5.2.0.215'
+	'5.2        -> 5.2.0.215'
+	'5          -> 5.2.0.215'
+	'5.0.1      -> 5.0.1.1'
+	'5.0        -> 5.0.1.1'
+	'4.8.0      -> 4.8.0.524'
+	'4.8        -> 4.8.0.524'
+	'4          -> 4.8.0.524'
+	'3.12.0     -> 3.12.1'
+	'3.12       -> 3.12.1'
+	'3          -> 3.12.1'
+	'latest     -> 5.2.0.215'
 )
 
 cd "$(dirname "${BASH_SOURCE[0]}")"
@@ -34,12 +41,20 @@ for version in "${versions[@]}"; do
 		versionAliases=( $version )
 
 		for index in "${aliases[@]}"; do
-			if [[ "${index%% *-> *}" == "$version" ]]; then
-				versionAliases+=(${index##* -> })
+			if [[ "${index##* -> }" == "$version" ]]; then
+				versionAliases+=(${index%% *-> *})
 			fi
 		done
 
-		tags=$(printf "%s$variant, " "${versionAliases[@]}")
+		tags=""
+		for alias in "${versionAliases[@]}"; do
+			if [[ "$alias" == "latest" ]] && [[ "$variant" == "-slim" ]]; then  # latest-slim should just be slim
+				tags="${tags}slim"
+			else
+				tags="${tags}${alias}${variant}"
+			fi
+			tags="${tags}, "
+		done
 		tags="${tags%, }"
 
 		architectures="amd64, i386, arm32v7"
