@@ -3,7 +3,7 @@ FROM debian:jessie-slim
 # MAINTAINER Jo Shields <jo.shields@xamarin.com>
 # MAINTAINER Alexander Köplinger <alkpli@microsoft.com>
 
-ENV MONO_VERSION 5.10.1.47
+ENV MONO_VERSION 5.14.0.177
 
 RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
 
