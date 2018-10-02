@@ -14,6 +14,8 @@ to latest Mono releases as soon as they're available.
 
 Starting with Mono 5.2 we provide a `slim` variant which only contains the bare minimum to run a simple console app. You can use this as a base and add just what you need.
 
+In addition, later versions of 5.14 will have a debian `stretch` variant as it is now the current stable version of debian. Stretch will take over as the base in the next major mono release.
+
 ## How to use this image
 
 This image can be used to run stand-alone Mono console apps or build your projects in a container.

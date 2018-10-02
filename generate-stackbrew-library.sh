@@ -33,6 +33,14 @@ for version in "${versions[@]}"; do
 		variants+=('-slim')
 	fi
 
+	if [ -d $version/stretch ]; then
+		variants+=('-stretch')
+	fi
+
+	if [ -d $version/stretch-slim ]; then
+		variants+=('-stretch-slim')
+	fi
+
 	for variant in "${variants[@]}"; do
 		commit="$(git log -1 --format='format:%H' -- "$version${variant/-//}")"
 		versionAliases=( $version )
