@@ -4,12 +4,12 @@ set -e
 # we want the current latest version, one minor version before that
 # and the last version before a major version bump
 aliases=(
-	'latest     -> 5.14.0.177'
+	'latest     -> 5.16.0.179'
+	'5.16.0     -> 5.16.0.179'
+	'5.16       -> 5.16.0.179'
 	'5.14.0     -> 5.14.0.177'
 	'5.14       -> 5.14.0.177'
-	'5          -> 5.14.0.177'
-	'5.12.0     -> 5.12.0.226'
-	'5.12       -> 5.12.0.226'
+	'5          -> 5.16.0.179'
 	'4.8.0      -> 4.8.0.524'
 	'4.8        -> 4.8.0.524'
 	'4          -> 4.8.0.524'
