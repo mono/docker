@@ -54,8 +54,8 @@ for version in "${versions[@]}"; do
 		done
 		tags="${tags%, }"
 
-		architectures="amd64, i386, arm32v7"
-		if [[ "$version" != "3"* ]] && [[ "$version" != "4"* ]]; then architectures+=", arm64v8"; fi
+		architectures="amd64, i386, arm32v7, arm32v5"
+		if [[ "$version" != "3"* ]] && [[ "$version" != "4"* ]]; then architectures+=", arm64v8, ppc64le"; fi
 
 		echo
 		echo "Tags: $tags"
