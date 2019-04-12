@@ -10,9 +10,6 @@ aliases=(
 	'5.18.1     -> 5.18.1.3'
 	'5.18       -> 5.18.1.3'
 	'5          -> 5.20.1.19'
-	'4.8.0      -> 4.8.0.524'
-	'4.8        -> 4.8.0.524'
-	'4          -> 4.8.0.524'
 )
 
 cd "$(dirname "${BASH_SOURCE[0]}")"
@@ -54,8 +51,7 @@ for version in "${versions[@]}"; do
 		done
 		tags="${tags%, }"
 
-		architectures="amd64, i386, arm32v7, arm32v5"
-		if [[ "$version" != "3"* ]] && [[ "$version" != "4"* ]]; then architectures+=", arm64v8, ppc64le"; fi
+		architectures="amd64, i386, arm32v7, arm32v5, arm64v8, ppc64le"
 
 		echo
 		echo "Tags: $tags"
