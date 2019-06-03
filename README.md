@@ -1,3 +1,11 @@
+# Maven's custom Dockerfile to build mono on bionic with latest OS updates
+
+- To build mono v6 preview
+```
+    git clone git@github.com:themaven-net/docker-mono.git
+    cd docker-mono/maven/
+    docker build -t "<<TAG>>" -f Dockerfile.bionic-mono-v6-preview-2019060301 .
+```
 # Supported tags and `Dockerfile` links
 
 - [`latest` (*Dockerfile*)](https://github.com/mono/docker/blob/master/4.6.2.16/Dockerfile)
