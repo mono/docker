@@ -1,0 +1,9 @@
+FROM ubuntu:bionic-20190515
+RUN apt-get update
+RUN apt install -y gnupg ca-certificates
+RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF
+RUN echo "deb https://download.mono-project.com/repo/ubuntu preview-bionic main" | tee /etc/apt/sources.list.d/mono-official-preview.list
+RUN apt update\
+  && apt-get install -y apt-transport-https binutils curl mono-devel ca-certificates-mono fsharp mono-vbnc nuget referenceassemblies-pcl \
+  && apt-get -y dist-upgrade \
+  && rm -rf /var/lib/apt/lists/* /tmp/*
