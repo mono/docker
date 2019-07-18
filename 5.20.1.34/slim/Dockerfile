@@ -3,7 +3,7 @@ FROM debian:stretch-slim
 # MAINTAINER Jo Shields <jo.shields@xamarin.com>
 # MAINTAINER Alexander Köplinger <alkpli@microsoft.com>
 
-ENV MONO_VERSION 5.18.1.3
+ENV MONO_VERSION 5.20.1.34
 
 RUN apt-get update \
   && apt-get install -y --no-install-recommends gnupg dirmngr \

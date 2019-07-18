@@ -4,12 +4,15 @@ set -e
 # we want the current latest version, one minor version before that
 # and the last version before a major version bump
 aliases=(
-	'latest     -> 5.20.1.19'
-	'5.20.1     -> 5.20.1.19'
-	'5.20       -> 5.20.1.19'
-	'5.18.1     -> 5.18.1.3'
-	'5.18       -> 5.18.1.3'
-	'5          -> 5.20.1.19'
+	'latest     -> 6.0.0.313'
+	'6.0.0      -> 6.0.0.313'
+	'6.0        -> 6.0.0.313'
+	'6          -> 6.0.0.313'
+	'5.20.1     -> 5.20.1.34'
+	'5.20       -> 5.20.1.34'
+	'5.18.1     -> 5.18.1.28'
+	'5.18       -> 5.18.1.28'
+	'5          -> 5.20.1.34'
 )
 
 cd "$(dirname "${BASH_SOURCE[0]}")"
