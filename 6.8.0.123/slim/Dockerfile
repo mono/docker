@@ -1,9 +1,9 @@
-FROM debian:stretch-slim
+FROM debian:buster-slim
 
 # MAINTAINER Jo Shields <jo.shields@xamarin.com>
 # MAINTAINER Alexander Köplinger <alkpli@microsoft.com>
 
-ENV MONO_VERSION 6.6.0.161
+ENV MONO_VERSION 6.8.0.123
 
 RUN apt-get update \
   && apt-get install -y --no-install-recommends gnupg dirmngr \
@@ -16,7 +16,7 @@ RUN apt-get update \
   && apt-key list | grep Xamarin \
   && apt-get purge -y --auto-remove gnupg dirmngr
 
-RUN echo "deb http://download.mono-project.com/repo/debian stable-stretch/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-official-stable.list \
+RUN echo "deb http://download.mono-project.com/repo/debian stable-buster/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-official-stable.list \
   && apt-get update \
   && apt-get install -y mono-runtime \
   && rm -rf /var/lib/apt/lists/* /tmp/*
