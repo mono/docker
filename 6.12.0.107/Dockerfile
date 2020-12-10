@@ -1,4 +1,4 @@
-FROM mono:6.8.0.123-slim
+FROM mono:6.12.0.107-slim
 
 # MAINTAINER Jo Shields <jo.shields@xamarin.com>
 # MAINTAINER Alexander Köplinger <alkpli@microsoft.com>

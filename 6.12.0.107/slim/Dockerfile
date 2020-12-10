@@ -3,7 +3,7 @@ FROM debian:buster-slim
 # MAINTAINER Jo Shields <jo.shields@xamarin.com>
 # MAINTAINER Alexander Köplinger <alkpli@microsoft.com>
 
-ENV MONO_VERSION 6.8.0.123
+ENV MONO_VERSION 6.12.0.107
 
 RUN apt-get update \
   && apt-get install -y --no-install-recommends gnupg dirmngr \
