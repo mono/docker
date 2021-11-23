@@ -28,7 +28,7 @@ cd "$(dirname "${BASH_SOURCE[0]}")"
 versions=( $( ls -d */ | sort -r))
 versions=( "${versions[@]%/}" )
 
-echo '# this file is generated via https://github.com/mono/docker/blob/master/generate-stackbrew-library.sh'
+echo '# this file is generated via https://github.com/mono/docker/blob/main/generate-stackbrew-library.sh'
 echo
 echo 'Maintainers: Jo Shields <jo.shields@xamarin.com> (@directhex),'
 echo '             Alexander Köplinger <alkpli@microsoft.com> (@akoeplinger)'
@@ -67,6 +67,7 @@ for version in "${versions[@]}"; do
 		echo
 		echo "Tags: $tags"
 		echo "Architectures: $architectures"
+		echo "GitFetch: refs/heads/main"
 		echo "GitCommit: ${commit}"
 		echo "Directory: $version${variant/-//}"
 	done
