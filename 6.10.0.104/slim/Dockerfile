@@ -6,7 +6,7 @@ FROM debian:buster-slim
 ENV MONO_VERSION 6.10.0.104
 
 RUN apt-get update \
-  && apt-get install -y --no-install-recommends gnupg dirmngr \
+  && apt-get install -y --no-install-recommends gnupg dirmngr ca-certificates apt-transport-https \
   && rm -rf /var/lib/apt/lists/* \
   && export GNUPGHOME="$(mktemp -d)" \
   && gpg --batch --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 3FA7E0328081BFF6A14DA29AA6A19B38D3D831EF \
@@ -16,7 +16,7 @@ RUN apt-get update \
   && apt-key list | grep Xamarin \
   && apt-get purge -y --auto-remove gnupg dirmngr
 
-RUN echo "deb http://download.mono-project.com/repo/debian stable-buster/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-official-stable.list \
+RUN echo "deb https://download.mono-project.com/repo/debian stable-buster/snapshots/$MONO_VERSION main" > /etc/apt/sources.list.d/mono-official-stable.list \
   && apt-get update \
   && apt-get install -y mono-runtime \
   && rm -rf /var/lib/apt/lists/* /tmp/*
